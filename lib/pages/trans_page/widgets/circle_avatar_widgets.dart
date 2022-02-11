@@ -11,7 +11,7 @@ class CircleAvatarWidget extends StatelessWidget {
         CircleAvatar(
           radius: 10,
           backgroundImage: AssetImage(
-            'assets/img2.JPG',
+            'assets/face1.jpg',
           ),
           backgroundColor: Colors.grey[200],
         ),
@@ -19,7 +19,7 @@ class CircleAvatarWidget extends StatelessWidget {
         CircleAvatar(
           radius: 10,
           backgroundImage: AssetImage(
-            'assets/img2.JPG',
+            'assets/face4.jpg',
           ),
           backgroundColor: Colors.grey[200],
         ),
@@ -27,7 +27,7 @@ class CircleAvatarWidget extends StatelessWidget {
         CircleAvatar(
           radius: 10,
           backgroundImage: AssetImage(
-            'assets/img2.JPG',
+            'assets/face2.jpg',
           ),
           backgroundColor: Colors.grey[200],
         ),

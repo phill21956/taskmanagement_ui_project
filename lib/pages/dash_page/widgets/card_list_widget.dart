@@ -23,7 +23,7 @@ class _CardListWidgetState extends State<CardListWidget> {
             CircleAvatar(
               radius: 10,
               backgroundImage: AssetImage(
-                'assets/img2.JPG',
+                'assets/face1.jpg',
               ),
               backgroundColor: Colors.grey[200],
             ),
@@ -33,7 +33,7 @@ class _CardListWidgetState extends State<CardListWidget> {
           value: 1,
           groupValue: val,
           onChanged: (value) {
-            setState(() => val= value as int);
+            setState(() => val = value as int);
           },
           activeColor: Colors.red,
           toggleable: true,

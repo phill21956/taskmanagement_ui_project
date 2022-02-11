@@ -23,7 +23,9 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           trailing: CircleAvatar(
             radius: 25,
-            backgroundImage: AssetImage('assets/img2.JPG'),
+            backgroundImage: AssetImage(
+              'assets/face1.jpg',
+            ),
             backgroundColor: Colors.grey[200],
           ),
         ),
