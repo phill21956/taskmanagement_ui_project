@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class LowerCardWidget extends StatelessWidget {
@@ -5,8 +7,23 @@ class LowerCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [],
+    return Card(
+      child: Column(
+        children: [
+        
+        ],
+      ),
     );
   }
 }
+
+  // ListTile(
+  //           leading: Icon(Icons.tag_faces),
+  //           title: Text('Nggolek Duwet UI Kit'),
+  //           subtitle: Row(
+  //             children: [
+  //               Icon(Icons.access_time),
+  //               Text('May 8,21'),
+  //             ],
+  //           ),
+  //         ),

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/card_list_widget.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/edited_card_list_widget.dart';
-import 'package:flutter_application_project/pages/trans_page/top_text_widget.dart';
+import 'package:flutter_application_project/pages/trans_page/widgets/message_field_widget.dart';
+import 'package:flutter_application_project/pages/trans_page/widgets/top_text_widget.dart';
 import 'package:flutter_application_project/pages/trans_page/widgets/circle_avatar_widgets.dart';
 import 'package:flutter_application_project/pages/trans_page/widgets/slider_widget.dart';
 
@@ -69,6 +70,7 @@ class TransactionPageContent extends StatelessWidget {
             image3: 'assets/img2.JPG',
           ),
           CardListWidget(),
+          MessageField(),
         ],
       ),
     );
