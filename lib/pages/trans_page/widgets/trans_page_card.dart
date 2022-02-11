@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_project/pages/dash_page/widgets/content_widget.dart';
+import 'package:flutter_application_project/pages/trans_page/widgets/trans_page_content.dart';
 
-class TopRowWidget extends StatelessWidget {
+class TransactionCardWidget extends StatelessWidget {
+  const TransactionCardWidget({ Key? key }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -11,7 +13,7 @@ class TopRowWidget extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.circular(30),
         ),
-        child: ContentWidget(),
+        child: TransactionPageContent(),
       ),
     );
   }

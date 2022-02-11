@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_project/pages/dash_page/widgets/bottom_bar_widget.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/card_list_widget.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/edited_card_list_widget.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/lower_card_widget.dart';
@@ -26,11 +27,16 @@ class ContentWidget extends StatelessWidget {
             title2: 'Tomorrow . ',
             image1: 'assets/img2.JPG',
             image2: 'assets/img2.JPG',
+            image3: 'assets/img2.JPG',
           ),
           SizedBox(height: 20),
           TextWidget(text1: 'Ongoing Projects', text2: 'All Project'),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           //  LowerCardWidget(),
+          TextWidget(text1: 'Recent Files'),
+          SizedBox(height: 20),
+
+        //  BottomBarWidget(),
         ],
       ),
     );
