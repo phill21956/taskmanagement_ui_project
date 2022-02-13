@@ -6,8 +6,10 @@ class CardListWidget extends StatefulWidget {
 }
 
 class _CardListWidgetState extends State<CardListWidget> {
-  bool value = false;
+  bool isChecked = false;
   int val = -1;
+
+  //get getColor => Colors.red;
 
   @override
   Widget build(BuildContext context) {
@@ -29,14 +31,16 @@ class _CardListWidgetState extends State<CardListWidget> {
             ),
           ],
         ),
-        trailing: Radio(
-          value: 1,
-          groupValue: val,
-          onChanged: (value) {
-            setState(() => val = value as int);
+        trailing: Checkbox(
+          checkColor: Colors.white,
+          activeColor: isChecked ? Colors.red : Colors.white,
+          value: isChecked,
+          shape: CircleBorder(),
+          onChanged: (bool? value) {
+            setState(() {
+              isChecked = value!;
+            });
           },
-          activeColor: Colors.red,
-          toggleable: true,
         ),
       ),
     );

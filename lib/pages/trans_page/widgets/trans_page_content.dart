@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/card_list_widget.dart';
 import 'package:flutter_application_project/pages/dash_page/widgets/edited_card_list_widget.dart';
 import 'package:flutter_application_project/pages/trans_page/widgets/message_field_widget.dart';

@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class EditedCardListWidget extends StatefulWidget {
   final String title1, title2;
   final String image1;
-  final String? image2 ;
+  final String? image2;
   final String? image3;
 
- const EditedCardListWidget(
+  const EditedCardListWidget(
       {required this.title1,
       required this.title2,
       required this.image1,
@@ -18,7 +18,7 @@ class EditedCardListWidget extends StatefulWidget {
 }
 
 class _EditedCardListWidgetState extends State<EditedCardListWidget> {
-  bool value = false;
+  bool isChecked = false;
   int val = -1;
 
   @override
@@ -48,27 +48,29 @@ class _EditedCardListWidgetState extends State<EditedCardListWidget> {
             CircleAvatar(
               radius: 10,
               backgroundImage: AssetImage(
-                widget.image2??'',
+                widget.image2 ?? '',
               ),
               backgroundColor: Colors.grey[200],
             ),
             CircleAvatar(
               radius: 10,
               backgroundImage: AssetImage(
-                widget.image3??'',
+                widget.image3 ?? '',
               ),
               backgroundColor: Colors.grey[200],
             ),
           ],
         ),
-        trailing: Radio(
-          value: 1,
-          groupValue: val,
-          onChanged: (value) {
-            setState(() => val = value as int);
+        trailing: Checkbox(
+          checkColor: Colors.white,
+          activeColor: isChecked ? Colors.red : Colors.white,
+          value: isChecked,
+          shape: CircleBorder(),
+          onChanged: (bool? value) {
+            setState(() {
+              isChecked = value!;
+            });
           },
-          activeColor: Colors.red,
-          toggleable: true,
         ),
       ),
     );
